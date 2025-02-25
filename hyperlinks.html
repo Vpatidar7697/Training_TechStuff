@@ -1,0 +1,75 @@
+<!-- What is a Hyperlink in HTML?
+A hyperlink (or link) in HTML allows users to navigate between web pages, sections of a page, or external resources. It is created using the <a> (anchor) tag.
+
+Types of Hyperlinks:
+Absolute URL (External Link): Links to a different website.
+Relative URL (Internal Link): Links to another page within the same website.
+Anchor Link: Jumps to a specific section within a page.
+Email Link: Opens the default email client.
+Phone Link: Initiates a call on mobile devices.
+Creating Hyperlinks (Examples)
+1. External Link (Absolute URL)
+Links to an external website.
+<a href="https://www.google.com">Visit Google</a>
+
+
+2. Internal Link (Relative URL)
+Links to another page within the same website.
+<a href="about.html">About Us</a>
+
+
+3. Open Link in a New Tab
+Uses target="_blank" to open in a new tab.
+<a href="https://www.example.com" target="_blank">Open in New Tab</a>
+
+
+4. Anchor Link (Jump to a Section)
+Navigates to a specific part of the same page.
+<a href="#section2">Go to Section 2</a>
+<h2 id="section2">Section 2</h2>
+
+
+5. Email Link
+Opens the email client with a predefined recipient.
+<a href="mailto:example@example.com">Send an Email</a>
+
+
+6. Phone Link
+Initiates a phone call on supported devices.
+<a href="tel:+1234567890">Call Us</a> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink Examples</title>
+</head>
+<body>
+
+    <!-- Absolute URL (External Link) -->
+    <p><a href="https://www.google.com">Visit Google</a></p>
+
+    <!-- Internal Link (Relative URL) -->
+    <p><a href="about.html">Go to About Page</a></p>
+
+    <!-- Open Link in a New Tab -->
+    <p><a href="https://www.example.com" target="_blank">Open Example in New Tab</a></p>
+
+    <!-- Anchor Link (Jump to Section) -->
+    <p><a href="#section2">Jump to Section 2</a></p>
+
+    <h2 id="section2">Section 2</h2>
+    <p>This is Section 2 of the page.</p>
+
+    <!-- Email Link -->
+    <p><a href="mailto:example@example.com">Send an Email</a></p>
+
+    <!-- Phone Link -->
+    <p><a href="tel:+1234567890">Call Us</a></p>
+
+    <!-- Button as a Link -->
+    <p><a href="https://www.google.com"><button>Click to Visit Google</button></a></p>
+
+</body>
+</html>

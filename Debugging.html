@@ -1,0 +1,96 @@
+<!-- What is Debugging in HTML?
+Definition:
+Debugging HTML is the process of identifying and fixing errors or issues in an HTML document to ensure the webpage displays correctly and functions as expected. Debugging helps correct problems like broken layouts, missing elements, incorrect attributes, or improper nesting of tags.
+
+Common HTML Errors & Debugging Methods
+1. Missing or Mismatched Tags
+❌ Incorrect Code:
+<p>This is a paragraph
+✔ Fixed Code:
+<p>This is a paragraph.</p>
+✅ Always close tags properly!
+
+2. Incorrect Nesting of Elements
+❌ Incorrect Code:
+<p><b>This is bold and <i>italic</b></i></p>
+✔ Fixed Code:
+<p><b>This is bold and <i>italic</i></b></p>
+✅ Ensure proper nesting of elements!
+
+3. Missing or Incorrect Attributes
+❌ Incorrect Code:
+<a href=www.google.com>Google</a>
+✔ Fixed Code:
+<a href="https://www.google.com">Google</a>
+✅ Always enclose attribute values in quotes!
+
+4. Using Deprecated or Invalid Tags
+❌ Incorrect Code (Deprecated <font> tag):
+<font color="red">This is red text.</font>
+✔ Fixed Code (Use CSS Instead):
+<p style="color: red;">This is red text.</p>
+✅ Avoid deprecated tags, use modern HTML & CSS!
+
+5. Debugging Methods
+🔹 Using Browser Developer Tools:
+
+Right-click on the webpage → Click Inspect (Chrome, Edge, Firefox).
+Check Console and Elements tab for errors.
+Use Console Log (console.log()) in JavaScript.
+🔹 Validating HTML Code:
+
+Use W3C HTML Validator to check syntax errors.
+🔹 Using Online Debugging Tools:
+
+Websites like CodePen or JSFiddle allow testing HTML/CSS. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging HTML</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .highlight { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <!-- Debugged Header with Proper Nesting -->
+    <header>
+        <h1>Debugging HTML Page</h1>
+    </header>
+
+    <!-- Debugged Paragraph (Closed Properly) -->
+    <p>This is a correctly formatted paragraph.</p>
+
+    <!-- Debugged Image with Proper Alt Text -->
+    <img src="image.jpg" alt="Sample Image" width="300">
+
+    <!-- Debugged Anchor Link with Proper URL Formatting -->
+    <p><a href="https://www.google.com" target="_blank">Visit Google</a></p>
+
+    <!-- Debugged List (Properly Closed Tags) -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Debugged Inline CSS Instead of Deprecated Tags -->
+    <p class="highlight">This text is red and bold using CSS.</p>
+
+    <!-- Debugged Button -->
+    <button onclick="showMessage()">Click Me</button>
+    
+    <script>
+        function showMessage() {
+            console.log("Button Clicked!"); // Debugging using Console Log
+            alert("Debugging successful!");
+        }
+    </script>
+
+</body>
+</html>
