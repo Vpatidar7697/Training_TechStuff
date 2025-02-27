@@ -1,0 +1,211 @@
+<!-- CSS Building Blocks Overview
+CSS (Cascading Style Sheets) is the language used to style HTML documents. It provides control over the layout, colors, fonts, and overall presentation of web pages. CSS consists of several fundamental building blocks:
+
+1. CSS Syntax
+CSS follows a simple syntax:
+selector {
+    property: value;
+}
+Example:
+p {
+    color: blue;
+    font-size: 16px;
+}
+Here, p is the selector, color and font-size are properties, and blue and 16px are values.
+
+2. CSS Selectors
+Selectors define which elements to style.
+
+Element Selector: Targets all elements of a type.
+h1 {
+    color: red;
+}
+Class Selector: Targets elements with a specific class.
+.myClass {
+    font-weight: bold;
+}
+ID Selector: Targets a unique element with an ID.
+
+#myId {
+    background-color: yellow;
+}
+Group Selector: Targets multiple elements.
+
+h1, p {
+    text-align: center;
+}
+Attribute Selector: Targets elements with specific attributes.
+
+input[type="text"] {
+    border: 1px solid black;
+}
+3. CSS Properties
+CSS properties define how an element appears.
+
+a) Text Properties
+color: Sets text color.
+font-size: Defines text size.
+font-family: Specifies font type.
+text-align: Aligns text.
+line-height: Adjusts space between lines.
+b) Box Model Properties
+Each HTML element is treated as a rectangular box consisting of:
+
+Margin - Space outside the element.
+Border - Border around the element.
+Padding - Space between content and border.
+Content - The actual text/image inside.
+Example:
+
+div {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 20px;
+}
+c) Background Properties
+background-color: Changes the background color.
+background-image: Sets a background image.
+background-size: Adjusts image size.
+Example:
+
+body {
+    background-color: lightgray;
+}
+
+
+4. CSS Layout Techniques
+CSS offers different methods to arrange elements:
+
+a) Normal Flow (Default)
+Elements appear one after another as per the document structure.
+
+b) Flexbox
+Used for aligning elements in a flexible layout.
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+c) Grid Layout
+Used for complex layouts with rows and columns.
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+d) Positioning
+static: Default position.
+relative: Positions relative to itself.
+absolute: Positions relative to the nearest positioned ancestor.
+fixed: Positions relative to the viewport.
+Example:
+
+.fixed-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: blue;
+} -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Building Blocks</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation menu */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background: #444;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Content section */
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Box model example */
+        .box {
+            width: 300px;
+            padding: 20px;
+            margin: 20px auto;
+            border: 2px solid #000;
+            background: white;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="title">Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h2>About Us</h2>
+        <p>This is an example of CSS building blocks in action.</p>
+    </section>
+
+    <div class="box">
+        This is a styled box using the CSS Box Model.
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
